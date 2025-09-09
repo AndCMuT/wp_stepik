@@ -3,7 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital marketing</title>
+    <title>
+        <?php 
+            if (is_404(  )) {
+                echo "Страница не найдена";
+            } else {
+                the_title( );
+            }
+        ?>
+    </title>
     <link rel="stylesheet" href="./styles/main.css">
     <?php wp_head(); ?>
 </head>

@@ -12,6 +12,7 @@ services:
       WORDPRESS_DB_PASSWORD: wp_pass
     volumes:
       - ./wp-content:/var/www/html/wp-content
+      - ./wp-config.php:/var/www/html/wp-config.php
 
   db:
     image: mysql:5.7
