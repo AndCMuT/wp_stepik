@@ -1,8 +1,9 @@
 <?php 
 /* 
 Template Name: Главная
-*/
-get_header(); ?> 
+*/ 
+?>
+<?php get_header(); ?> 
     <main>
         <section class="section-container services">
             <div class="container-section">
